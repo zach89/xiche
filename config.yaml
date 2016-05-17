@@ -1,0 +1,9 @@
+name: wushuiapp
+version: 1
+handle:
+- passwdaccess:  if(path ~ "assorder.php") passwd "a:a"
+
+cron:
+- description: orderclear
+  url: /xiche/cron/orderclear.php
+  schedule: "*/5 * * * *"
